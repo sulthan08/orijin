@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
@@ -70,6 +71,11 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
 
+=======
+    <h1>hello world</h1>
+    <p>coba dsfgsdfgsdg</p>
+    <p>wkwkkwkw HAHAHA</p>
+>>>>>>> 80903fddf76c1f9a28e26a4d0dbbfd4600ba8a55
 </body>
 
 </html>
