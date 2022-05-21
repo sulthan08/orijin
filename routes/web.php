@@ -15,11 +15,13 @@ use App\Http\Controllers\ImageController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+ Route::get('/', function () {
+     return view('welcome');
+ });
 
-
+ Route::get('/coba', function () {
+    return view('home.index');
+});
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::resource('produk', ProductController::class);    
     Route::post('produk/uploadImage', [ProductController::class, 'uploadimage']);
