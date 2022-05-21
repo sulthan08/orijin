@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\Image;
 
@@ -99,7 +100,7 @@ class ImageController extends Controller
                             ->where('id', $id)
                             ->first();
         if ($itemgambar) {
-            \Storage::delete($itemgambar->url);
+            Storage::delete($itemgambar->url);
             $itemgambar->delete();
             return back()->with('success', 'Data berhasil dihapus');
         } else {
@@ -108,7 +109,7 @@ class ImageController extends Controller
     }
 
     public function upload($fileupload, $itemuser, $folder) {
-        $path = $fileupload->store('files');
+        $path = $fileupload->store('public/files');
         $inputangambar['url'] = $path;
         $inputangambar['user_id'] = $itemuser->id;
         return Image::create($inputangambar);

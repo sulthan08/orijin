@@ -55,11 +55,11 @@
                                 <div class="row">
                                     @foreach ($itemgambar as $gambar)
                                         <div class="col col-lg-3 col-md-3 mb-2">
-                                            {{-- <?php
-                                            var_dump($gambar->url);
-                                            exit(); ?> --}}
-                                            <img src="{{ \Storage::url($gambar->url) }}" alt="img"
+
+                                            <img src="{{ Storage::url("$gambar->url") }}" alt="img"
                                                 class="img-thumbnail mb-2">
+                                            {{-- <img src="{{ Storage::url("public/{$gambar->url}") }}" alt="img"
+                                                class="img-thumbnail mb-2"> --}}
                                             <form action="{{ url('/admin/image/' . $gambar->id) }}" method="post"
                                                 style="display:inline;">
                                                 @csrf

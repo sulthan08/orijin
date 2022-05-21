@@ -36,6 +36,7 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
+                        <th scope="col">Gambar</th>
                         <th scope="col">Nama Barang</th>
                         <th scope="col">Stock</th>
                         <th scope="col">Action</th>
@@ -45,6 +46,11 @@
                     @foreach ($itemproduk as $item)
                         <tr>
                             <th scope="row">{{ ++$no }}</th>
+                            <td>
+                                @if($item->foto != null)
+                                <img src="{{ Storage::url($item->foto) }}" alt="{{ $item->nama_produk }}" width='150px' class="img-thumbnail">
+                                @endif
+                            </td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->stock }}</td>
                             <td>
