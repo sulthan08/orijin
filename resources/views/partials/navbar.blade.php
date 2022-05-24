@@ -18,7 +18,7 @@
                     <a style="color: white" class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a style="color: black" class="px-4 btn btn-xl nav-link" role="button"
+                    <a style="color: black; background-color:white;" class="px-4 btn btn-xl nav-link btn-nav" role="button"
                         href="{{ url('/login') }}">Login</a>
                 </li>
             </ul>

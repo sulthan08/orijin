@@ -1,119 +1,33 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.main')
+<link rel="stylesheet" href="/css/landing.css" />
+<link rel="stylesheet" href="/css/main.css" />
 
-<head>
-    <meta charset="utf-8">
-    <title>Orijin PC</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
-
-<body>
-    <nav>
-        <div class="menu-icon">
-            <span class="fas fa-bars"></span>
-        </div>
-        <div class="logo">
-            Orijin PC
-        </div>
-        <div class="nav-items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pcModel.html">PC Model</a></li>
-            <li><a href="contact.html">Contact Support</a></li>
-            <li><a href="Review.html">Review</a></li>
-        </div>
-        <div class="search-icon">
-            <span class="fas fa-search"></span>
-        </div>
-        <div class="cancel-icon">
-            <span class="fas fa-times"></span>
-        </div>
-        <form action="#">
-            <input type="search" class="search-data" placeholder="Search" required>
-            <button type="submit" class="fas fa-search"></button>
-        </form>
-    </nav>
-    <div class="content-pcm">
-        <div class="kolom"><img src="img/1.svg">
-            <pre>                   shroud pc
-               - ram 2000gb
-               - rtx 3090ti
-               - intel i9 12thgen
-               - NZXT Case
-            </pre>
-        </div>
-        <div class="kolom"><img src="img/2.svg">
-            <pre>                    scream pc
-               -ram 1000gb
-               -rtx 3080ti
-               -intel i7 12thgen
-               -NZXT Case
-            </pre>
-        </div>
-        <div class="kolom"><img src="img/3.svg">
-            <pre>                    tenz pc
-               -ram 500gb
-               -rtx 3070ti
-               -intel i5 12thgen
-               -CubeGaming Case
-            </pre>
-        </div>
-        <div class="kolom"><img src="img/3.svg">
-            <pre>                    tenz pc
-               -ram 500gb
-               -rtx 3070ti
-               -intel i5 12thgen
-               -CubeGaming Case
-            </pre>
-        </div>
-        <div class="kolom"><img src="img/3.svg">
-            <pre>                    tenz pc
-               -ram 500gb
-               -rtx 3070ti
-               -intel i5 12thgen
-               -CubeGaming Case
-            </pre>
-        </div>
-        <div class="kolom"><img src="img/3.svg">
-            <pre>                    tenz pc
-               -ram 500gb
-               -rtx 3070ti
-               -intel i5 12thgen
-               -CubeGaming Case
-            </pre>
+@section('container')
+<section class="header">
+    <div class="container container-header">
+        <div class="row r-header">
+            <h2 class="text-center" style="padding-top: 3rem; padding-bottom: 3rem">PC Model</h2>
         </div>
     </div>
-    <script>
-        const menuBtn = document.querySelector(".menu-icon span");
-        const searchBtn = document.querySelector(".search-icon");
-        const cancelBtn = document.querySelector(".cancel-icon");
-        const items = document.querySelector(".nav-items");
-        const form = document.querySelector("form");
-        menuBtn.onclick = () => {
-            items.classList.add("active");
-            menuBtn.classList.add("hide");
-            searchBtn.classList.add("hide");
-            cancelBtn.classList.add("show");
-        }
-        cancelBtn.onclick = () => {
-            items.classList.remove("active");
-            menuBtn.classList.remove("hide");
-            searchBtn.classList.remove("hide");
-            cancelBtn.classList.remove("show");
-            form.classList.remove("active");
-            cancelBtn.style.color = "#ff3d00";
-        }
-        searchBtn.onclick = () => {
-            form.classList.add("active");
-            searchBtn.classList.add("hide");
-            cancelBtn.classList.add("show");
-        }
-    </script>
-    <footer>
-        <p>bismillah</p>
-        <p>insyaallah 100 ini mah</p>
-    </footer>
-</body>
+</section>
+<section>
+    
+    <div class="container container-pcmodel" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="row r-card justify-content-md-center">
+            @foreach ($itemproduk as $item)
+            <div class="card-fitur col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/1.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $item->name }}</h5>
+                        <p class="card-text">{{ $item->deskripsi }}</p>
+                        <a href="{{ URL::to('pcmodel/detail/'.$item->id) }}" class="btn btn-primary">Detail</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach        
+        </div>
+    </div>
+</section>
+@endsection
 
-</html>

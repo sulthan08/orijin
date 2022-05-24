@@ -6,7 +6,7 @@ nav{
     font-weight: 300;
 }
 
-.btn{
+.btn-nav{
     background: white;
     border: white;
 }
@@ -16,6 +16,11 @@ nav{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+/* .container-pcmodel {
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+} */
 
 /* body{
     background-color: #F6F6F6;
