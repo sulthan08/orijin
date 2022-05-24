@@ -2,8 +2,8 @@
     <div class="container">
         <a class="navbar-brand" href="#">
             <div class="logo">
-              Orijin PC
             </div>
+            <img width="73" src="images/logo.svg" alt="logo">
         </a>
         <div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -12,24 +12,25 @@
                 </li>
                 <li class="nav-item pe-4">
                     <a style="color: white" class="nav-link" href="#">PC Model</a>
-                </li>                
+                </li>
                 <li class="nav-item pe-4">
                     <a style="color: white" class="nav-link" href="#">About</a>
-                </li>                
+                </li>
                 <li class="nav-item">
-                  <a class="nav-link inline d-flex dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                  
-                    <h6 class="">rara</h6>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Dashboard</a>
-                    <a class="dropdown-item" href="#">Edit Profile</a>                    
-                    <form method="POST" action="/logout" class="text-xs font-semibold text-blue-500 ml-6">
-                        @csrf
-                        <button type="submit" class="dropdown-item border-0">Log Out</button>
-                    </form>
-                  </div>
-                </li>   
-            </ul>            
+                    <a class="nav-link inline d-flex dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h6 class="">rara</h6>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Dashboard</a>
+                        <a class="dropdown-item" href="#">Edit Profile</a>
+                        <form method="POST" action="/logout" class="text-xs font-semibold text-blue-500 ml-6">
+                            @csrf
+                            <button type="submit" class="dropdown-item border-0">Log Out</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -49,7 +50,7 @@
           <a class="dropdown-item" href="#">Edit Profile</a>
           <a class="dropdown-item" href="#">Log Out</a>
         </div>
-      </li>   
+      </li>
     </ul>
   </div>
 </nav> -->
