@@ -53,6 +53,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::post('image', [ImageController::class, 'store']);
     // hapus image by id
     Route::delete('image/{id}', [ImageController::class, 'destroy']);
+    // hapus image produk by id
+    Route::delete('produkimage/{id}', [ProductController::class, 'deleteimage']);
 });
 
 Route::get('/halo', function () {

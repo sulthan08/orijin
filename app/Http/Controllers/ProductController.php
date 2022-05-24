@@ -171,10 +171,10 @@ class ProductController extends Controller
         // ambil produk by produk_id kalau tidak ada maka error 404
         $itemproduk = Product::findOrFail($itemprodukimage->produk_id);
         // kita cari dulu database berdasarkan url gambar
-        $itemgambar = ProductImage::where('url', $itemprodukimage->foto)->first();
+        $itemgambar = ProductImage::where('foto', $itemprodukimage->foto)->first();
         // hapus imagenya
         if ($itemgambar) {
-            Storage::delete($itemgambar->url);
+            Storage::delete($itemgambar->foto);
             $itemgambar->delete();
         }
         // baru update hapus produk image
