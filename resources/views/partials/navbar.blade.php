@@ -2,8 +2,9 @@
     <div class="container">
         <a class="navbar-brand" href="#">
             <div class="logo">
-                Orijin PC
             </div>
+            <img width="73" src="images/logo.svg" alt="logo">
+
         </a>
         <div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -15,9 +16,10 @@
                 </li>
                 <li class="nav-item pe-4">
                     <a style="color: white" class="nav-link" href="#">About</a>
-                </li>                
+                </li>
                 <li class="nav-item">
-                    <a style="color: black" class="px-4 btn btn-xl nav-link" role="button" href="{{ url('/login') }}">Login</a>
+                    <a style="color: black" class="px-4 btn btn-xl nav-link" role="button"
+                        href="{{ url('/login') }}">Login</a>
                 </li>
             </ul>
         </div>
