@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
-<body class="bg-about">
+<body>
     <nav>
         <div class="menu-icon">
             <span class="fas fa-bars"></span>
@@ -29,15 +29,44 @@
         <div class="cancel-icon">
             <span class="fas fa-times"></span>
         </div>
-        <!-- <form action="#">
+        <form action="#">
             <input type="search" class="search-data" placeholder="Search" required>
             <button type="submit" class="fas fa-search"></button>
-         </form> -->
+        </form>
     </nav>
-    <div class="content-about">
-        <h1>About</h1>
-        <p><b>Memberikan pengalaman terbaik pada setiap komputer yang kami tawarkan dengan optimasi terbaik pada setiap
-                kebutuhan pelanggan.</b></p>
+    <div class="content-review">
+        <div class="review">
+            <img src="img/orang 1.svg">
+            <br><br>
+            <h3>Ahmad Zuhal</h3>
+            <br><img src="img/Bintang.svg">
+            <br><br>
+            <p>PCnya KEREN, sangat GG Geming. Saya suka, pokoknya kalau mau belanja disini saja.</p>
+        </div>
+        <div class="review">
+            <img src="img/orang 1.svg">
+            <br><br>
+            <h3>Ahmad Zuhal</h3>
+            <br><img src="img/Bintang.svg">
+            <br><br>
+            <p>PCnya KEREN, sangat GG Geming. Saya suka, pokoknya kalau mau belanja disini saja.</p>
+        </div>
+        <div class="review">
+            <img src="img/orang 1.svg">
+            <br><br>
+            <h3>Ahmad Zuhal</h3>
+            <br><img src="img/Bintang.svg">
+            <br><br>
+            <p>PCnya KEREN, sangat GG Geming. Saya suka, pokoknya kalau mau belanja disini saja.</p>
+        </div>
+        <div class="review">
+            <img src="img/orang 1.svg">
+            <br><br>
+            <h3>Ahmad Zuhal</h3>
+            <br><img src="img/Bintang.svg">
+            <br><br>
+            <p>PCnya KEREN, sangat GG Geming. Saya suka, pokoknya kalau mau belanja disini saja.</p>
+        </div>
     </div>
     <script>
         const menuBtn = document.querySelector(".menu-icon span");

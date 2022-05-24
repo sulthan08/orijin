@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
-<body class="bg-about">
+<body>
     <nav>
         <div class="menu-icon">
             <span class="fas fa-bars"></span>
@@ -29,15 +29,60 @@
         <div class="cancel-icon">
             <span class="fas fa-times"></span>
         </div>
-        <!-- <form action="#">
+        <form action="#">
             <input type="search" class="search-data" placeholder="Search" required>
             <button type="submit" class="fas fa-search"></button>
-         </form> -->
+        </form>
     </nav>
-    <div class="content-about">
-        <h1>About</h1>
-        <p><b>Memberikan pengalaman terbaik pada setiap komputer yang kami tawarkan dengan optimasi terbaik pada setiap
-                kebutuhan pelanggan.</b></p>
+    <div class="content-pcm">
+        <div class="kolom"><img src="img/1.svg">
+            <pre>                   shroud pc
+               - ram 2000gb
+               - rtx 3090ti
+               - intel i9 12thgen
+               - NZXT Case
+            </pre>
+        </div>
+        <div class="kolom"><img src="img/2.svg">
+            <pre>                    scream pc
+               -ram 1000gb
+               -rtx 3080ti
+               -intel i7 12thgen
+               -NZXT Case
+            </pre>
+        </div>
+        <div class="kolom"><img src="img/3.svg">
+            <pre>                    tenz pc
+               -ram 500gb
+               -rtx 3070ti
+               -intel i5 12thgen
+               -CubeGaming Case
+            </pre>
+        </div>
+        <div class="kolom"><img src="img/3.svg">
+            <pre>                    tenz pc
+               -ram 500gb
+               -rtx 3070ti
+               -intel i5 12thgen
+               -CubeGaming Case
+            </pre>
+        </div>
+        <div class="kolom"><img src="img/3.svg">
+            <pre>                    tenz pc
+               -ram 500gb
+               -rtx 3070ti
+               -intel i5 12thgen
+               -CubeGaming Case
+            </pre>
+        </div>
+        <div class="kolom"><img src="img/3.svg">
+            <pre>                    tenz pc
+               -ram 500gb
+               -rtx 3070ti
+               -intel i5 12thgen
+               -CubeGaming Case
+            </pre>
+        </div>
     </div>
     <script>
         const menuBtn = document.querySelector(".menu-icon span");
