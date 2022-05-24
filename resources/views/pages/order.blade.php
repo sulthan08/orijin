@@ -1,6 +1,14 @@
 @extends('layouts.main')
 
 @section('container')
+<section class="container-fluid" style="background-color: #999790">
+    <div class="container container-header">
+        <div class="row r-header">
+            <h1 class="text-center" style="padding-top: 10rem; padding-bottom: 3rem">Form Pemesanan</h1>
+        </div>
+    </div>
+</section>
+<section>
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
@@ -15,12 +23,6 @@
                         <p>{{ $message }}</p>
                     </div>
                 @endif
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0">{{ $title }}</h1>
-                        <br>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
                 <div class="row pt-4 pb-4">
                     <div class="d-flex justify-content-center">
                         <div class="card" style="width: 51rem;">
@@ -80,4 +82,5 @@
             </div><!-- /.container-fluid -->
         </div>
         <!-- /.content-header -->
+</section>
     @endsection

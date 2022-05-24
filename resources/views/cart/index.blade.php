@@ -46,6 +46,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @if(!empty($itemcart->detail))
                                 @foreach($itemcart->detail as $detail)
                                 <tr>
                                     <td>
@@ -97,12 +98,14 @@
                                     </td>
                                 </tr>
                                 @endforeach
+                                @endif
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4">
+                @if(!empty($itemcart))
                 <div class="card">
                     <div class="card-header">
                         Ringkasan
@@ -146,6 +149,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
             </div>
         </div>
     </div>

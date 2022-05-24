@@ -8,6 +8,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\CartDetailController;
 use App\Http\Controllers\DetailOrderController;
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------

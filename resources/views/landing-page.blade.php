@@ -17,7 +17,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md pt-4">
-                            <a href="#" class="btn btn-dftr" style="color:white; background-color: black">Beli
+                            <a href="/pcmodel" class="btn btn-dftr" style="color:white; background-color: black">Beli
                                 Sekarang</a>
                         </div>
                     </div>
@@ -38,10 +38,8 @@
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="images/1.svg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Barang 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's
-                                content.</p>
+                            <h5 class="card-title">Shroud PC</h5>
+                            <p class="card-text">8K GAMING 120FPS++.</p>
                         </div>
                     </div>
                 </div>
@@ -49,10 +47,8 @@
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="images/1.svg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Barang 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's
-                                content.</p>
+                            <h5 class="card-title">Linus PC</h5>
+                            <p class="card-text">AAA GAMING READY.</p>
                         </div>
                     </div>
                 </div>
@@ -60,10 +56,8 @@
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="images/1.svg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Barang 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's
-                                content.</p>
+                            <h5 class="card-title">Pudidi PC</h5>
+                            <p class="card-text">AMD ADVANTAGE</p>
                         </div>
                     </div>
                 </div>

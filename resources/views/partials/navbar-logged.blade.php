@@ -19,11 +19,11 @@
                 <li class="nav-item">
                     <a class="nav-link inline d-flex dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <h6 class="">rara</h6>
+                        <h6 class="">{{ auth()->user()->name }}</h6>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Dashboard</a>
-                        <a class="dropdown-item" href="#">Edit Profile</a>
+                        <a class="dropdown-item" href="{{ route('cart.index') }}">Cart</a>
+                        <a class="dropdown-item" href="{{ route('history.index') }}">Histori Belanja</a>
                         <form method="POST" action="/logout" class="text-xs font-semibold text-blue-500 ml-6">
                             @csrf
                             <button type="submit" class="dropdown-item border-0">Log Out</button>
