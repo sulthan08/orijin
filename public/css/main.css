@@ -1,0 +1,24 @@
+*{
+    font-family:'Nunito';
+}
+
+nav{
+    font-weight: 300;
+}
+
+.btn{
+    background: white;
+    border: white;
+}
+
+.footer{
+    background-color: #999790;    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* body{
+    background-color: #F6F6F6;
+} */
+
+

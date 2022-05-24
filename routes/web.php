@@ -16,7 +16,7 @@ use App\Http\Controllers\ImageController;
 */
 
  Route::get('/', function () {
-     return view('welcome');
+     return view('landing-page');
  });
 
  Route::get('/coba', function () {

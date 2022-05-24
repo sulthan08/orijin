@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Orijin PC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
@@ -18,7 +18,7 @@
             Orijin PC
         </div>
         <div class="nav-items">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{{ url('/') }}">Home</a></li>
             <li><a href="pcModel.html">PC Model</a></li>
             <li><a href="contact.html">Contact Support</a></li>
             <li><a href="Review.html">Review</a></li>

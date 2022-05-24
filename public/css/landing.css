@@ -1,0 +1,197 @@
+.judul{
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 3.5rem;
+}
+
+.header{
+    background-color: #999790;
+}
+/* .container-header{
+    background-color: #F6F6F6;
+} */
+
+.features{
+    margin-top:3rem;
+}
+
+.article{
+    margin-top:3rem;
+}
+
+.r-header{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.desk{
+    font-size: 12px;
+}
+
+.card-img-top{
+    /* max-width: 100px; */
+    width: 100%;
+    /* padding-inline: 1.6rem; */
+    padding-top: 0.6rem;
+    padding-bottom: 1.2rem;
+}
+
+.r-card{
+    padding-left: 5rem;
+}
+
+.f-card{
+    /* max-width: 130px; */
+    width: 100%;
+}
+
+/* .card-fitur{
+    margin-inline: 1.3rem;
+} */
+
+.card-text{
+    font-size: 12px;
+}
+
+.a-card{
+    background-color: #F6F6F6 !important;
+    border: #F6F6F6 !important;
+}
+
+.article-title{
+    color: #212529;
+}
+
+.article-desk{
+    color: #343A40;
+}
+
+.card-subtitle{
+    font-size: 12px;
+}
+
+.img-header{
+    max-width: 472px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+/* responsive */
+@media only screen and (max-width: 767px){
+    /* .container-header{
+        padding: 3rem;
+        background-color: #212529;
+    } */
+    /* .header{
+        background-color: #F6F6F6;
+    } */
+
+    .header{
+        max-height: 296px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        background-color: white;
+        border-radius: 7px;
+    }
+    .judul{
+        padding-top: 1rem;  
+        padding-bottom: 0.7rem;  
+        /* padding-left: 20rem;*/
+        margin-left: 0.5rem;
+        padding-right: 1rem;
+        font-size: 20;
+        line-height: 32px;
+    }
+    
+    .desk{
+        margin-left: 0.5rem;
+        padding-right: 1rem !important;         
+        padding-bottom: 2rem;         
+        font-size: 11;
+        line-height: 16px;
+    }
+    
+    .isi-header{ 
+        display: block;  
+        position: relative;     
+        top: -3.6rem;
+        z-index: 2;
+    }
+    .img-header{
+        max-width: 300;
+        display: block;        
+        opacity: 0.2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -17rem;
+        z-index: -1;
+    }
+
+    .btn-dftr{
+        width: 100%;
+        /* display: block;  
+        position: relative;     
+        bottom: -3.6rem; */
+    }
+
+    .r-card{        
+        display: flex;        
+        padding-inline: 0.4rem;
+    }
+
+    .card-img-top{
+        /* max-width: 100px; */
+        width: 100%;
+        padding-inline: 1.2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .card-fitur{
+        /* flex: 50%; */
+        float: left;
+    }
+
+    .f-card{
+        max-width: 100px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .card-title{
+        font-size: 10;
+        font-weight: 500;
+    }
+
+    .a-card{
+        background-color: white !important;
+    }
+    
+    .col-card{
+        padding-bottom: 1rem;
+        margin-left: auto;        
+        margin-right: auto;        
+    }
+
+    .row-article{
+        padding-inline: 0.3rem;
+    }
+
+
+}
