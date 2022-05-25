@@ -18,12 +18,12 @@
                     <a style="color: white" class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item pe-4">
-                    <a style="color: black; background-color:white;" class="px-4 btn btn-xl nav-link btn-nav" role="button"
-                        href="{{ url('/login') }}">Login</a>
+                    <a style="color: black; background-color:white;" class="px-4 btn btn-xl nav-link btn-nav"
+                        role="button" href="{{ url('/login') }}">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a style="color: black; background-color:white;" class="px-4 btn btn-xl nav-link btn-nav" role="button"
-                        href="{{ url('/Register') }}">Register</a>
+                    <a style="color: black; background-color:white;" class="px-4 btn btn-xl nav-link btn-nav"
+                        role="button" href="{{ url('/register') }}">Register</a>
                 </li>
             </ul>
         </div>
